@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333333;
+    }
+
+    p {
+      color: #666666;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script>
+    function sendFeedback() {
+      var feedback = document.getElementById("feedbackInput").value;
+      window.location.href = "mailto:oliverbarnet441@gmail.com?subject=Feedback&body=" + feedback;
+    }
+  </script>
+</head>
+<body>
+<h1>Form</h1>
+<p>Ever wanted a website? Or a game? <br>Well today, I can make you one! <br>In the form, say what type of game you want, and some key features that should be in this game. <br>Also, I will feature your name somewhere in the game.</p>
+<textarea id="feedbackInput" rows="4" cols="50"></textarea>
+<br>
+<button onclick="sendFeedback()">Send</button>
+</body>
+</html>
